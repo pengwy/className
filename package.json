@@ -10,6 +10,8 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1"
   }
 }
