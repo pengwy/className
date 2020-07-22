@@ -1,0 +1,45 @@
+body{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+*{
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#textEl{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+}
+#getBtn{
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3797e8;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#copyPlan{
+    font-size: 14px;
+}
+.G-flex{
+    display: flex
+}
+
+
+#textHtml{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}

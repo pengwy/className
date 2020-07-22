@@ -1,0 +1,15 @@
+{
+  "name": "className",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pengwy/className.git",
+  "author": "pengyongtxd <1626897120@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}
