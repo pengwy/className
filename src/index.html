@@ -10,11 +10,30 @@
 
 <body>
     <section class="content">
+        <h4 class="title">获取类名</h4>
         <textarea  id="textEl"></textarea>
-        <button id="getBtn">获取</button>
+        <div class="btn-con">
+            <button id="getBtn" class="btn">获取</button>
+            <button id="clearBtn" class="btn">清除</button>
+            <button id="copyBtn" class="btn">复制</button>
+        </div>
+    
         <div id='textHtml'>
         </div>
         <div id="copyPlan">暂无</div>
+    </section>
+
+    <section class="content">
+        <h4 class="title">大小写转换</h4>
+        <div class="input-el">
+            <lable>小写</lable> <input type="text" id='lowerInput' class="">
+        </div>
+        <div class="input-el">
+            <lable>大写</lable> <input type="text" id='upperInput' class="">
+        </div>
+        <div class="btn-con">
+            <button id="copyUpperBtn" class="btn">复制</button>
+        </div>
     </section>
     <script src="./index.js"></script>
 </body>

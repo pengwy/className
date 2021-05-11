@@ -1,13 +1,18 @@
 import './index.scss'
 import 'normalize.css'
 import $ from "jquery";
-
+import ClipboardJS from 'clipboard'
 
 
 const textEl = $('#textEl')
 const getBtn = $('#getBtn')
+const clearBtn = $('#clearBtn')
+const copyBtn = $('#copyBtn')
+
 const bdEl = $('#textHtml')
 const copyPlan = $('#copyPlan')
+
+
 
 
 getBtn.on('click', function () {
@@ -19,6 +24,28 @@ getBtn.on('click', function () {
     copyPlan.html(classStr)
     bdEl.html('')
 });
+clearBtn.on('click',function(){
+    textEl.val('')
+    bdEl.html('')
+    copyPlan.html('')
+})
+
+var clipboard = new ClipboardJS('#copyBtn',{
+    text: function (trigger) {
+        return copyPlan.html();
+      },
+});
+clipboard.on('success', function(e) {
+    alert('复制成功')
+    e.clearSelection();
+});
+
+clipboard.on('error', function(e) {
+    alert('复制失败')
+});
+
+
+
 
  function getEl(el){
     if(el.childNodes.length == 0){
@@ -76,3 +103,17 @@ function getChildClass(arr){
     }
     return str
 }
+
+const lowerInput = $('#lowerInput')
+const upperInput = $('#upperInput')
+
+
+lowerInput.on('change',function(){
+    upperInput.val($(this).val().toUpperCase())
+})
+
+var clipboardUpper = new ClipboardJS('#copyUpperBtn',{
+    text: function (trigger) {
+        return upperInput.val();
+      },
+});

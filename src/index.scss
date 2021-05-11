@@ -1,17 +1,19 @@
-body{
+body {
     padding-left: 50px;
     padding-top: 50px;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#textEl{
+
+#textEl {
     width: 500px;
     height: 200px;
     margin-bottom: 20px;
@@ -19,7 +21,8 @@ body{
     padding: 5px;
     font-size: 14px;
 }
-#getBtn{
+
+.btn {
     padding: 5px 15px;
     font-size: 16px;
     color: #fff;
@@ -29,17 +32,36 @@ body{
     border-radius: 5px;
     margin-bottom: 15px;
 }
-#copyPlan{
+
+#copyPlan {
     font-size: 14px;
 }
-.G-flex{
+
+.G-flex {
     display: flex
 }
 
 
-#textHtml{
+#textHtml {
     opacity: 0;
     width: 0;
     height: 0;
     overflow: hidden;
+}
+
+.content {
+    .title {}
+
+    .input-el {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        lable{
+            margin-right: 10px;
+        }
+        input{
+            font-size: 16px;
+            height: 40px;
+        }
+    }
 }

@@ -6,6 +6,7 @@
   "author": "pengyongtxd <1626897120@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "clipboard": "^2.0.8",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1"
   },
